@@ -25,3 +25,19 @@ if theme.disqus
             (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
         })();
     script(id='dsq-count-scr' src='//#{theme.disqus}.disqus.com/count.js' async)
+
+if theme.gitment
+    #container
+    link(rel='stylesheet', href='https://imsun.github.io/gitment/style/default.css')
+    script(src='https://imsun.github.io/gitment/dist/gitment.browser.js')
+    script.
+      var gitment = new Gitment({
+        owner: 'lfcyme',
+        repo: 'lfcyme.github.io',
+        oauth: {
+          client_id: '7db82b62fbaf6a7eb7f8',
+          client_secret: '63f8968d182d9af03c00ce6a33e5d322f73703ca',
+        },
+      })
+      gitment.render('container')
+

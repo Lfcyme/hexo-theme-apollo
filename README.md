@@ -1,4 +1,10 @@
-![hexo-theme-apollo](https://cloud.githubusercontent.com/assets/9530963/13026956/08e76eca-d277-11e5-8bfc-2e80cea20a0d.png)
+## Other
+- 前端蠢新一枚, **基于Apollo主题自行瞎改，不适用于其他用户**,有需要请移步[原项目](https://github.com/pinggod/hexo-theme-apollo)
+
+**Updated:**
+- 2018-02-15 新增Gitment 
+
+---
 
 ## 文档
 
