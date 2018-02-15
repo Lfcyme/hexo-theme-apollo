@@ -1,4 +1,4 @@
-## Other
+## README
 - 前端蠢新一枚, **基于Apollo主题自行瞎改，不适用于其他用户**,有需要请移步[原项目](https://github.com/pinggod/hexo-theme-apollo)
 
 **Updated:**
