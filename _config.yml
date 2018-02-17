@@ -1,8 +1,8 @@
 menu:
-    Blog: /
-    Archive: /archives/
+    首页: /
+    归档: /archives/
+    关于: /about/
     GitHub: https://github.com/lfcyme
-    About: /about/
 
 favicon: /favicon.png
 logo: /favicon.png
