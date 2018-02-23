@@ -1,6 +1,10 @@
 extends partial/layout
 
+
 block container
+    .tag-cloud
+        h2 Tags cloud
+        .tag-cloud-tags!= tagcloud({min_font: 14, max_font: 16, amount: 30, color: false, start_color: '#7f8c8d', end_color: '#34495e'})
     include mixins/post
     +posts()
 
