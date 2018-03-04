@@ -1,8 +1,17 @@
 extends partial/layout
 
+//- 新增标签云
+mixin tags_cloud()
+    .paginator
+        h2 Tags Cloud
+        .tag-cloud-tags!= tagcloud({min_font: 16, max_font: 16, amount: 30, color: true, start_color: '#42b983', end_color: '#42b983'})
+
+
 block container
     include mixins/post
+    +tags_cloud()
     +postList()
+
 
 block pagination
     include mixins/paginator

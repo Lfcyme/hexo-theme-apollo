@@ -1,8 +1,9 @@
 menu:
     首页: /
     归档: /archives/
+    笔记: /tags/笔记/
     关于: /about/
-    GitHub: https://github.com/lfcyme
+    
 
 favicon: /favicon.png
 logo: /favicon.png
