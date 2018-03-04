@@ -43,5 +43,14 @@ mixin post(item)
             h1.post-title
                 != item.title
             +postInfo(item)
+            //- 新增字数统计
+            .post-count
+                span= ' There are '
+                span.post-count(style="color:#42b983;")= wordcount(page.content)
+                span= ' words that may take less than '
+                span.post-count(style="color:#42b983;")= min2read(page.content)
+                span= ' minutes. '
+
+
             .post-content
                 != item.content
