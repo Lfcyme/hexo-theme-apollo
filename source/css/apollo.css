@@ -424,10 +424,10 @@ code,pre {
 	content:"HTML"
 }
 .highlight.js .code:after {
-	content:"JS"
+	content:"Javascript"
 }
 .highlight.bash .code:after {
-	content:"BASH"
+	content:"Bash"
 }
 .highlight.css .code:after {
 	content:"CSS"
@@ -445,10 +445,10 @@ code,pre {
 	content:"XML"
 }
 .highlight.python .code:after {
-	content:"PYTHON"
+	content:"Python"
 }
 .highlight.json .code:after {
-	content:"JSON"
+	content:"Json"
 }
 .highlight.swift .code:after {
 	content:"SWIFT"
@@ -573,7 +573,8 @@ main.container,.home.post-list,.archive {
 	padding-bottom:1px
 }
 footer .copyright {
-	margin:4em 0;
+	font-family: 'chalkboard';
+	/* margin:4em 0; */
 	border-top:1px solid #ddd;
 	text-align:center
 }
@@ -583,11 +584,52 @@ footer .copyright p,footer .copyright a {
 	font-weight:100
 }
 footer .copyright a:hover {
-	color:#888
+	color:#42b983
 }
 @font-face {
 	font-family:'sourcesanspro';
 	src:url("../font/sourcesanspro.woff2") format("woff2"),url("../font/sourcesanspro.woff") format("woff");
 	font-weight:normal;
 	font-style:normal
+}
+
+/* 选择id 用# 选择class用.*/
+
+.archive,.post-count{
+	font-family: 'chalkboard'
+}
+
+.tag-cloud {
+	font-family: 'chalkboard';
+	max-width:500px;
+	margin:5em auto;
+
+}
+
+.tag-cloud .tag-cloud-content{
+	margin-left: 50px;
+	
+}
+
+.tag-cloud .tag-cloud-content a::before{
+	content: '#';
+}
+
+.tag-cloud .tag-cloud-content a {
+	color:#42b983;
+	background-repeat: repeat-x;
+    background-position: bottom;
+    background-size: 100% 6px;
+    background-image: linear-gradient(transparent, transparent 5px, #fff 5px, #fff);
+	margin: 2px
+}
+
+.tag-cloud .tag-cloud-content a:hover {
+	color: #ddd;
+	background-image: linear-gradient(transparent, transparent 4px, #ddd 4px, #42b983);
+}
+
+/* read more hover */
+.home.post-list .read-more:hover {
+	color:#ddd
 }
