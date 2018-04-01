@@ -37,19 +37,25 @@ mixin postList()
         - })
 
 //- Post Page
+//- 隐藏 关于 页面的字数统计和时间
 mixin post(item)
+    - var url = url_for(page.path)
     .post
         article.post-block
-            h1.post-title
-                != item.title
-            +postInfo(item)
-            //- 新增字数统计
-            .post-count
-                span= ' There are '
-                span.post-count(style="color:#42b983;")= wordcount(page.content)
-                span= ' words that may take less than '
-                span.post-count(style="color:#42b983;")= min2read(page.content)
-                span= ' minutes. '
+            if url != '/about/index.html'
+                h1.post-title
+                    != item.title
+                +postInfo(item)
+                //- 新增字数统计
+                .post-count
+                    span= ' There are '
+                    span.post-count(style="color:#42b983;")= wordcount(page.content)
+                    span= ' words that may take less than '
+                    span.post-count(style="color:#42b983;")= min2read(page.content)
+                    span= ' minutes. '
+            else
+                h1.post-title
+                    != item.title
 
 
             .post-content

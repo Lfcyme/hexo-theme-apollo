@@ -14,9 +14,9 @@ instragram: test
 
 # Comment
 # e.g disqus: seansun
-disqus:
+disqus: 
 duoshuo:
-gitment: true
+gitment: false
 
 # Analytics
 # google-analytics:

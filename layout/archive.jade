@@ -2,9 +2,12 @@ extends partial/layout
 
 //- 新增标签云
 mixin tags_cloud()
-    .paginator
-        h2 Tags Cloud
-        .tag-cloud-tags!= tagcloud({min_font: 16, max_font: 16, amount: 30, color: true, start_color: '#42b983', end_color: '#42b983'})
+    - var url = url_for(page.path)
+    //- 在标签页隐藏标签云
+    if url == '/archives/index.html'
+        .paginator
+            h2 Tags Cloud
+            .tag-cloud-tags!= tagcloud({min_font: 16, max_font: 16, amount: 30, color: true, start_color: '#42b983', end_color: '#42b983'})
 
 
 block container
