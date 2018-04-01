@@ -1,8 +1,8 @@
 menu:
-    首页: /
-    归档: /archives/
-    笔记: /tags/笔记/
-    关于: /about/
+    Home: /
+    Archives: /archives/
+    Notes: /tags/笔记/
+    About: /about/
     
 
 favicon: /favicon.png
