@@ -608,7 +608,7 @@ footer .copyright a:hover {
 
 .tag-cloud .tag-cloud-content{
 	margin-left: 50px;
-	
+
 }
 
 .tag-cloud .tag-cloud-content a::before{
@@ -631,5 +631,30 @@ footer .copyright a:hover {
 
 /* read more hover */
 .home.post-list .read-more:hover {
-	color:#ddd
+	color: #ddd
+}
+
+/* toc */
+aside.sidebar {
+	font-size: 12px;
+	font-weight: normal;
+	font-family: "chalkboard","comic sans";
+	content:"#";
+	color: #34495e7d;
+}
+.toc {
+	/*background-color: #f8f8f8;*/
+}
+
+.toc-text {
+	color: #42b983;
+}
+
+.toc-text a:hover {
+	color: #ddd;
+	background-image: linear-gradient(transparent, transparent 4px, #ddd 4px, #42b983);
+}
+
+.toc-text :hover {
+	color: #ddd
 }

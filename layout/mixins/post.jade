@@ -28,7 +28,7 @@ mixin postList()
             - var itemYear = date(item.date, 'YYYY') - 0;
             - change = year !== itemYear;
             - year = change ? itemYear : year;
-            if change 
+            if change
                 h2.archive-year!= year
             .post-item
                 +postInfo(item)
@@ -57,6 +57,9 @@ mixin post(item)
                 h1.post-title
                     != item.title
 
+    aside.sidebar
+        include toc
 
-            .post-content
-                != item.content
+    .post-content
+        != item.content
+

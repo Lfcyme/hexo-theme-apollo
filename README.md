@@ -10,6 +10,7 @@
 - [x] 修改部分样式
 - [x] 新增标签云
 - [x] 仿照另一个主题进行了修改
+- [x] 文章目录
 
 ## Install
 请移步[原项目](https://github.com/pinggod/hexo-theme-apollo)
