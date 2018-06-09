@@ -3,7 +3,7 @@ menu:
     Archives: /archives/
     Notes: /tags/笔记/
     About: /about/
-    
+
 
 favicon: /favicon.png
 logo: /favicon.png
@@ -14,7 +14,7 @@ instragram: test
 
 # Comment
 # e.g disqus: seansun
-disqus: 
+disqus:
 duoshuo:
 valine:
   enable: true # if you want use valine, please set enable: true
@@ -24,6 +24,7 @@ valine:
   verify: false # true/false:verify code
   avatar: retro # avatar style https://github.com/xCss/Valine/wiki/avatar-setting-for-valine
   placeholder:  # comment box placeholder
+
 
 # Analytics
 # google-analytics:

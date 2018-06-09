@@ -636,15 +636,21 @@ footer .copyright a:hover {
 
 /* toc */
 aside.sidebar {
-	font-size: 12px;
+	font-size: 15px;
 	font-weight: normal;
 	font-family: "chalkboard","comic sans";
-	content:"#";
-	color: #34495e7d;
+	/* content:"1"; */
+	color: #2c3e50c9;
+	position: absolute;
+	left: calc(50vw + 400px);
+	top: 200px;
+	padding: 10px;
+	box-sizing: border-box;
+
 }
-.toc {
-	/*background-color: #f8f8f8;*/
-}
+/* .toc {
+	background-color: #f8f8f8;
+} */
 
 .toc-text {
 	color: #42b983;
